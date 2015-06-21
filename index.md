@@ -4,7 +4,7 @@ subtitle    :
 author      : Lam WM
 job         : Student
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
+highlighter : prettify  # {highlight.js, prettify, highlight}
 hitheme     : solarized_light      # 
 widgets     : [mathjax, bootstrap, quiz, interactive]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
@@ -45,5 +45,9 @@ User should exercise caution when entering values for the four properties.
 
 ## Accuracy
 
-The accuracy in based on the training set is above 95% - a good accuracy using Linear Discriminant Analysis.
 
+The accuracy based on the training set is: 
+
+```
+## [1] 0.9777778
+```
