@@ -15,16 +15,13 @@ knit        : slidify::knit2slides
 
 To create an App that uses a prediction model to predict the next word after the word(s) that the user has entered.
 
-
---- .class #id 
-
 ## Datasets used
 
 Data from blogs, news articles and twitter messages were used.
 
 Depending on the number of records in each dataset, some variable-sized subset was used to develop the prediction model.
 
---- .class #id
+--- .class #id 
 
 ## Method
 
@@ -48,8 +45,3 @@ The next slide features the App.
 ## End
 
 Thanks for checking this out. :)
-
-
---- 
-
-
