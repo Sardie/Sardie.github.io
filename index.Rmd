@@ -11,9 +11,9 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Purpose
+## Main function
 
-To create an App that uses a prediction model to predict the next word after the word(s) that the user has entered.
+The App takes in user-inputed text, either a word or phrase, and uses a prediction model derived from the datasets provided to predict the top five most likely word(s) that follows.
 
 ## Datasets used
 
@@ -25,13 +25,13 @@ Depending on the number of records in each dataset, some variable-sized subset w
 
 ## Method
 
-Lists of words and phrases are generated based on their appearances in the datasets, using the text mining packages {tm}
+Lists of words and phrases are generated based on their appearances in the datasets, using the text mining package {tm}
 
-Employed a method similar to bootstrapping to work around the memory limitation of R. Alas, still unable to use the entire dataset. A randomly sampled subset was used instead. 
+A method similar to bootstrapping was employed to work around the memory limitation. Alas, it is still not possible to use the entire dataset. Instead, a randomly sampled subset was used. 
 
 The top 5 most frequently appearing subsequent word following the word or phrase that the user has entered was then extracted and presented on the right side of the App interface.
 
-The next slide features the App.
+A demonstration is critical to know what the App is capable of. The next slide features the App. 
 
 --- .class #id
 
