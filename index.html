@@ -46,10 +46,10 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Purpose</h2>
+    <h2>Main function</h2>
   </hgroup>
   <article data-timings="">
-    <p>To create an App that uses a prediction model to predict the next word after the word(s) that the user has entered.</p>
+    <p>The App takes in user-inputed text, either a word or phrase, and uses a prediction model derived from the datasets provided to predict the top five most likely word(s) that follows.</p>
 
 <h2>Datasets used</h2>
 
@@ -66,13 +66,13 @@
     <h2>Method</h2>
   </hgroup>
   <article data-timings="">
-    <p>Lists of words and phrases are generated based on their appearances in the datasets, using the text mining packages {tm}</p>
+    <p>Lists of words and phrases are generated based on their appearances in the datasets, using the text mining package {tm}</p>
 
-<p>Employed a method similar to bootstrapping to work around the memory limitation of R. Alas, still unable to use the entire dataset. A randomly sampled subset was used instead. </p>
+<p>A method similar to bootstrapping was employed to work around the memory limitation. Alas, it is still not possible to use the entire dataset. Instead, a randomly sampled subset was used. </p>
 
 <p>The top 5 most frequently appearing subsequent word following the word or phrase that the user has entered was then extracted and presented on the right side of the App interface.</p>
 
-<p>The next slide features the App.</p>
+<p>A demonstration is critical to know what the App is capable of. The next slide features the App. </p>
 
   </article>
   <!-- Presenter Notes -->
@@ -106,7 +106,7 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Purpose'>
+        data-slide=1 title='Main function'>
          1
       </a>
     </li>
