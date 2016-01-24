@@ -1,5 +1,5 @@
 ---
-title       : A Simple App that Predicts at Good Accuracy the Sub-Species of Iris Flowers
+title       : A simple App that predicts the subsequent word given a user-inputed word or phrase.
 subtitle    : 
 author      : Lam WM
 job         : Student
@@ -13,41 +13,43 @@ knit        : slidify::knit2slides
 
 ## Purpose
 
-Predicts sub-species of Iris flowers based on:
-
-1. Sepal Length
-
-2. Sepal Width
-
-3. Petal Length
-
-4. Petal Width
+To create an App that uses a prediction model to predict the next word after the word(s) that the user has entered.
 
 
 --- .class #id 
 
-## Conditions
+## Datasets used
 
-Requires all four properties to be stated.
+Data from blogs, news articles and twitter messages were used.
 
-Does not yet have codes to catch errors for invalid input.
+Depending on the number of records in each dataset, some variable-sized subset was used to develop the prediction model.
 
-User should exercise caution when entering values for the four properties.
+--- .class #id
+
+## Method
+
+Lists of words and phrases are generated based on their appearances in the datasets, using the text mining packages {tm}
+
+Employed a method similar to bootstrapping to work around the memory limitation of R. Alas, still unable to use the entire dataset. A randomly sampled subset was used instead. 
+
+The top 5 most frequently appearing subsequent word following the word or phrase that the user has entered was then extracted and presented on the right side of the App interface.
+
+The next slide features the App.
 
 --- .class #id
 
 ## Application - Takes some time to load, please wait...
 
-<iframe src = 'http://sardie.shinyapps.io/AssignmentOnGithub' height='600px'></iframe>
+<iframe src = 'http://sardie.shinyapps.io/en_US' height='600px'></iframe>
 
 
----
+--- .class #id
 
-## Accuracy
+## End
+
+Thanks for checking this out. :)
 
 
-The accuracy based on the training set is: 
+--- 
 
-```
-## [1] 0.9777778
-```
+

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>A simple App that predicts the subsequent word given a user-inputed word or phrase.</title>
+  <title>A Simple App that Predicts at Good Accuracy the Sub-Species of Iris Flowers</title>
   <meta charset="utf-8">
-  <meta name="description" content="A simple App that predicts the subsequent word given a user-inputed word or phrase.">
+  <meta name="description" content="A Simple App that Predicts at Good Accuracy the Sub-Species of Iris Flowers">
   <meta name="author" content="Lam WM">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -35,7 +35,7 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1>A simple App that predicts the subsequent word given a user-inputed word or phrase.</h1>
+    <h1>A Simple App that Predicts at Good Accuracy the Sub-Species of Iris Flowers</h1>
     <h2></h2>
     <p>Lam WM<br/>Student</p>
   </hgroup>
@@ -49,7 +49,14 @@
     <h2>Purpose</h2>
   </hgroup>
   <article data-timings="">
-    <p>To create an App that uses a prediction model to predict the next word after the word(s) that the user has entered.</p>
+    <p>Predicts sub-species of Iris flowers based on:</p>
+
+<ol>
+<li><p>Sepal Length</p></li>
+<li><p>Sepal Width</p></li>
+<li><p>Petal Length</p></li>
+<li><p>Petal Width</p></li>
+</ol>
 
   </article>
   <!-- Presenter Notes -->
@@ -57,29 +64,14 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Datasets used</h2>
+    <h2>Conditions</h2>
   </hgroup>
   <article data-timings="">
-    <p>Data from blogs, news articles and twitter messages were used.</p>
+    <p>Requires all four properties to be stated.</p>
 
-<p>Depending on the number of records in each dataset, some variable-sized subset was used to develop the prediction model.</p>
+<p>Does not yet have codes to catch errors for invalid input.</p>
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="class" id="id" style="background:;">
-  <hgroup>
-    <h2>Method</h2>
-  </hgroup>
-  <article data-timings="">
-    <p>Lists of words and phrases are generated based on their appearances in the datasets, using the text mining packages {tm}</p>
-
-<p>Employed a method similar to bootstrapping to work around the memory limitation of R. Alas, still unable to use the entire dataset. A randomly sampled subset was used instead. </p>
-
-<p>The top 5 most frequently appearing subsequent word following the word or phrase that the user has entered was then extracted and presented on the right side of the App interface.</p>
-
-<p>The next slide features the App.</p>
+<p>User should exercise caution when entering values for the four properties.</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -90,26 +82,22 @@
     <h2>Application - Takes some time to load, please wait...</h2>
   </hgroup>
   <article data-timings="">
-    <iframe src = 'http://sardie.shinyapps.io/en_US' height='600px'></iframe>
+    <iframe src = 'http://sardie.shinyapps.io/AssignmentOnGithub' height='600px'></iframe>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="" id="slide-4" style="background:;">
   <hgroup>
-    <h2>End</h2>
+    <h2>Accuracy</h2>
   </hgroup>
   <article data-timings="">
-    <p>Thanks for checking this out. :)</p>
+    <p>The accuracy based on the training set is: </p>
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+<pre><code>## [1] 0.9777778
+</code></pre>
 
-<slide class="" id="slide-6" style="background:;">
-  <article data-timings="">
-    
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -126,32 +114,20 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Datasets used'>
+        data-slide=2 title='Conditions'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Method'>
+        data-slide=3 title='Application - Takes some time to load, please wait...'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Application - Takes some time to load, please wait...'>
+        data-slide=4 title='Accuracy'>
          4
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='End'>
-         5
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=6 title='NA'>
-         6
       </a>
     </li>
   </ul>
